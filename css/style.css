@@ -1,0 +1,55 @@
+body {
+    background: rgb(244, 255, 254);
+    color: rgb(25, 54, 112);
+    font-family: Poppins, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(0, 54, 148);
+}
+
+h2 {
+    font-size: 20px;
+    color: rgb(0, 54, 148);
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight:500;
+    color: rgb(0, 54, 148);
+}
+
+p {
+    font-size: 16px;
+    line-height: 14px;
+    color: rgb(4, 14, 30);
+}
+
+img {
+    border: 2px solid rgb(0, 54, 148);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.active {
+    color: blue;
+    text-decoration: underline;
+}
+
+.skip {
+    position: absolute;
+    top: -200px;
+}
+
+.skip:focus-within {
+    position: relative;
+    top: 20px;
+}
+
+.container {
+    display: grid;
+}
+
