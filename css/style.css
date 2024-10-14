@@ -40,7 +40,6 @@ p {
 }
 
 a {
-    padding-top: 12px;
     font-size: 14px;
 }
 .caption {
@@ -112,7 +111,7 @@ nav ul {
 
 .skip:focus-within {
     position: relative;
-    top: 20px;
+    top: 80px;
 }
 
 /* main section container styling */
