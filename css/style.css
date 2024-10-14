@@ -318,4 +318,9 @@ footer p, footer a{
     margin-top: 12px;
 }
 
-/* CEW styling */
+/* reduced motion preference */
+@media screen and (prefers-reduced-motion: reduce) {
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+}
