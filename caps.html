@@ -3,39 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>CAPS</title>
 </head>
 <body>
     <header>
-        <a href = "">Skip to Main Content</a>
-        <img src="images/UHS.jpg" alt="UHS signboard">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href = "basic_needs.html">Basic Needs</a></li>
-                <li class="active"> <a href = "caps.html">CAPS</a></li>
-                <li><a href = "cew.html">CEW+</a></li>
-            </ul>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <nav class="nav">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href = "basic_needs.html">Basic Needs</a></li>
+                    <li> <a href = "caps.html" id="active-link">CAPS</a></li>
+                    <li><a href = "cew.html">CEW+</a></li>
+                </ul>
+            </div>
         </nav>
-        <h1>Counseling and Psychological Services (CAPS)</h1>
+        <h1 class="heading1">Counseling and Psychological Services</h1>
+        <img src="images/UHS.jpg" alt="UHS signboard">
     </header>
-    <main>
-        <section>
+    <main class = "container" id="main">
+        <section class="intro">
             <h2>Welcome to CAPS!</h2>
-            <p>We are happy to offer both in-person and virtual services. CAPS is committed to creating an environment based on our values of multicultural, multi-disciplinary and multi-theoretical practices that allow our diverse student body to access care, receive high quality services and take positive pathways to mental health.</p>
-            <p>CAPS has a limited number of <a href="https://caps.umich.edu/article/private-counseling-rooms">private spaces </a>available for students to connect with their counselor via telecounseling. Please contact the front desk for more information on those private spaces.</p>
-            <p>Connect with us:
-                <button>Treatment and Support Options</button>
-                <button>When Can I Be Seen?</button>
-                <button>Workshop Request</button>
-                <button>Urgent Care</button>
+            <p>We are happy to offer both in-person and virtual services. CAPS is committed to creating an environment based on our values of multicultural, multi-disciplinary and multi-theoretical practices that allow our diverse student body to access care, receive high quality services and take positive pathways to mental health.
             </p>
+            <p>CAPS has a limited number of <a href="https://caps.umich.edu/article/private-counseling-rooms">private spaces </a>available for students to connect with their counselor via telecounseling. Please contact the front desk for more information on those private spaces.</p>
+            <div class="int-block-grid">
+                <p>Connect with us: </p>
+                <div><a href="https://caps.umich.edu/article/mental-health-support-options">Treatment and Support Options</a></div>
+                <div><a href="https://caps.umich.edu/content/when-can-i-be-seen">Can I Be Seen?</a></div>
+                <div><a href="https://caps.umich.edu/article/workshop-request-0">Workshop Request</a></div>
+                <div><a href="https://caps.umich.edu/article/urgent-support">rgent Care</a></div>
+            </div>
         </section>
         <section>
             <h2>
-                Guide to Peer Counselling
+            Guide to Peer Counselling
             </h2>
-            <img src="images/UMSI_MHIClassroom_02202023_18.jpg" alt="A boy and girl sitting and talking while pointing at a laptop on the desk">
+            <img class="img-padding" src="images/UMSI_MHIClassroom_02202023_18.jpg" alt="A boy and girl sitting and talking while pointing at a laptop on the desk">
             <p>Read more to know how to get in touch with peer counsellors and get the most out of it.</p>
         </section>
         <section>

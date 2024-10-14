@@ -1,42 +1,108 @@
+
+
 body {
-    background: rgb(244, 255, 254);
-    color: rgb(25, 54, 112);
+    background: rgb(255, 254, 244);
+    color: #00274C;
     font-family: Poppins, sans-serif;
 }
 
 h1 {
     font-size: 40px;
     font-weight: 600;
-    color: rgb(0, 54, 148);
+    color: #00274C;
+    background-color: #FFCB05;
+    padding: 100px 20px 20px 20px;
+    text-align: center;
+    letter-spacing: -1px;
+    line-height: 125%;
 }
 
 h2 {
     font-size: 20px;
-    color: rgb(0, 54, 148);
-    padding-bottom: 20px;
+    font-weight: 600;
+    color: #00274C;
+    padding-top: 32px;
+    line-height: 120%;
 }
 
 h3 {
     font-size: 16px;
     font-weight:500;
-    color: rgb(0, 54, 148);
+    color: #00274C;
 }
 
 p {
-    font-size: 16px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 125%;
     color: rgb(4, 14, 30);
+    padding-top: 12px;
+    text-align: left;
 }
 
-img {
+a {
+    padding-top: 12px;
+    font-size: 14px;
+}
+.caption {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 120%;
+
+}
+
+/* img {
     border: 2px solid rgb(0, 54, 148);
     border-radius: 8px;
     padding: 8px;
+} */
+
+#active-link {
+    color: blue;
+    font-weight: 600;
+    border-bottom: solid blue;
+    padding-bottom: 2px;
 }
 
-.active {
-    color: blue;
-    text-decoration: underline;
+/* css styling for mobile */
+
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(255, 254, 244);
+    padding: 10px 20px;
+}
+.nav img {
+    max-height: 60px;
+    width: auto;
+    border-radius: 4px;
+}
+
+nav ul {
+    position: inherit;
+}
+.nav li {
+    display: inline-block;
+    padding: 0 8px;
+}
+
+.nav li a {
+    text-decoration: none;
+}
+
+.nav li a:visited {
+    color: #00274C;
+    text-decoration: none;
 }
 
 .skip {
@@ -49,7 +115,207 @@ img {
     top: 20px;
 }
 
+/* main section container styling */
+
+
 .container {
     display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    margin: 0 20px;
 }
 
+/* image styling for CAPS intro
+.container img {
+    grid-column: 1/ span 4;
+    margin: 0px;
+} */
+
+/* intro section container styling */
+
+.intro{
+    grid-column: 1 / -1;
+}
+
+.intro ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    padding-top: 12px;
+}
+
+.intro ul li:nth-child(1){
+    grid-column: 1/ span 1;
+    text-align: center;
+    /* UMgpt used for css of li item alignment */
+    display: flex; /* Using flexbox for item layout */
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+.intro ul li:nth-child(2) {
+    grid-column: 2/ span 1;
+    text-align: center;
+    /* UMgpt used for css of li item alignment */
+    display: flex; /* Using flexbox for item layout */
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+.intro ul li:nth-child(3) {
+    grid-column: 3/ span 1;
+    text-align: center;
+    /* UMgpt used for css of li item alignment */
+    display: flex; /* Using flexbox for item layout */
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+.intro ul li:nth-child(4) {
+    grid-column: 4/ span 1;
+    text-align: center;
+    /* UMgpt used for css of li item alignment */
+    display: flex; /* Using flexbox for item layout */
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon, .article-item .icon {
+    width: 40px;
+    border: solid 1px #00274C;
+    padding: 8px;
+    border-radius: 24px;
+}
+
+/* physical health and mental health section container styling */
+
+.content-block{
+    grid-column: 1/ span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.content-block div:first-child {
+    grid-column: 1 / span 2;
+}
+
+.article-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.article-item p {
+    padding-top: 0px;
+}
+
+.article-item img {
+    max-height: 120px;
+    width: auto;
+    overflow: hidden;
+}
+
+.button {
+    grid-column: 1/ span 2;
+    width: fit-content;
+    background-color: #FFCB05;
+    padding: 8px 40px;
+    margin: 12px;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    line-height: 125%;
+    color: #00274C;
+    border-radius: 8px;
+    justify-self: center;
+}
+
+.button:focus {
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+footer{
+    margin-top: 24px;
+    padding: 20px;
+    background-color: #00274C;
+    text-align: left;
+}
+footer p, footer a{
+    color: #FFCB05;
+}
+
+/* Basic Needs page styling */
+
+.int-block-grid {
+    margin: 20px 0;
+    grid-column: 1/ span 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.int-block-grid p {
+    padding-bottom: 12px;
+    grid-column: 1/ span 4;
+}
+.int-block-grid div:nth-child(2), .int-block-grid div:nth-child(4){
+    grid-column: 1/ span 1;
+    background-color: #FFCB05;
+    padding: 40px;
+    border: solid #00274C 1px;
+    text-align: center;
+    align-content: center;
+
+}
+
+.int-block-grid div:nth-child(3), .int-block-grid div:nth-child(5){
+    grid-column: 2/ span 1;
+    background-color: #FFCB05;
+    padding: 40px;
+    border: solid #00274C 1px;
+    text-align: center;
+    align-content: center;
+}
+
+.int-block-grid div:nth-child(2) {
+    border-radius: 12px 0 0 0;
+}
+.int-block-grid div:nth-child(3) {
+    border-radius: 0 12px 0 0;
+}
+.int-block-grid div:nth-child(4) {
+    border-radius: 0 0 0 12px;
+}
+.int-block-grid div:nth-child(5) {
+    border-radius: 0 0 12px 0;
+}
+.int-block-grid div a{
+    color: #00274C;
+    text-decoration: none;
+}
+
+.int-block-grid div a:visited {
+    text-decoration: none;
+}
+
+/* Basic needs other sections styling */
+.container section:nth-child(2) {
+    grid-column: 1 / span 4;
+}
+
+.container section:nth-child(3) {
+    grid-column: 1 / span 4;
+}
+
+.container section:nth-child(4) {
+    grid-column: 1 / span 4;
+}
+
+/* Caps section styling */
+.img-padding{
+    margin-top: 12px;
+}
+
+/* CEW styling */
