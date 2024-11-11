@@ -645,20 +645,15 @@ footer p, footer a{
 /* Stop animation when focused on buttons */
 
 .slide-btn:focus ~ .slideshow-wrapper {
-    animation: none;
-    transition-timing-function: none; /* Override animation transition */
+    animation: none; /* Override animation transition */
 }
-.slide-btn-1:focus ~ .slideshow-wrapper { animation: none; 
-    transition-timing-function: none;
+.slide-btn-1:focus ~ .slideshow-wrapper { animation: none;
     left: 0; }
-.slide-btn-2:focus ~ .slideshow-wrapper { animation: none; 
-    transition-timing-function: none;
+.slide-btn-2:focus ~ .slideshow-wrapper { animation: none;
     left: -100%; }
-.slide-btn-3:focus ~ .slideshow-wrapper { animation: none; 
-    transition-timing-function: none;
+.slide-btn-3:focus ~ .slideshow-wrapper { animation: none;
     left: -200%; }
-.slide-btn-4:focus ~ .slideshow-wrapper { animation: none; 
-    transition-timing-function: none;
+.slide-btn-4:focus ~ .slideshow-wrapper { animation: none;
     left: -300%; }
 
 /* Button focus styling */
