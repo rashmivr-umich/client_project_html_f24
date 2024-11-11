@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Page Not Found</title>
+</head>
+<body>
+    <header>
+        <div class="skip"><a href="#main-404">Skip to Main Content</a></div>
+        <nav class="nav">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+            <div>
+                <ul>
+                    <li><a href="index.html" id="active-link">Home</a></li>
+                    <li><a href = "basic_needs.html">Basic Needs</a></li>
+                    <li> <a href = "caps.html">CAPS</a></li>
+                    <li><a href = "cew.html">CEW+</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>404</h1>
+    </header>
+    <main id = "main-404">
+        <!-- Content for 404 page is generated using UMGpt Model GPT-4o -->
+        <img src="images/404-sleeping-bear.png"  alt=""> <!-- Image by djvstock on Freepik -->
+        <div class="content-404">
+            <h2>Oops! Looks like this page is asleep!</h2>
+            <p>Sorry, we couldn't find the page you were looking for</p> <br>
+            <section>
+                <p>Check out these resources in the meantime:</p>
+                <div>
+                    <h3>Home Page</h3>
+                    <p>Jump back to the <a href="index.html">Home page</a></p>
+                </div>
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>Need some guidance? <a href="mailto:umsi.admissions@umich.edu">Contact us here</a></p>
+                </div>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p>UoM Student Life | <a href="https://studentlife.umich.edu/">Student Life </a></p>
+        <p>
+            <span>CEW+ (Center for the Education of Women+) at the University of Michigan</span><br>
+            <span><a href="tel:1-734-764-6360">(734) 764-6360 | </a></span>
+            <span><a href="http://eepurl.com/dv0vX5">Join Our Mailing List</a></span>
+        </p>
+        <p>CAPS <br>Contact Us: <br>
+            <span><a href="tel:+17347648312">(734) 764-8312 (24hrs)</a></span>
+            <span><a href="mailto:caps-uofm@umich.edu">caps-uofm@umich.edu</a></span><br><br>
+            <p>&copy; Copyrights <span id="year"></span> by University of Michigan. All rights reserved.</p>
+        </p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>

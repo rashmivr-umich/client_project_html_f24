@@ -22,8 +22,44 @@
             </div>
         </nav>
         <h1 class="heading1">Center for the Education of Women +</h1>
+
+        <!-- Code for carousel has been picked and edited from Geeks for Geeks carousel using CSS
+        Accessibility issues have been rectified through UM-GPTs suggestions
+        https://www.geeksforgeeks.org/how-to-make-a-carousel-using-css/ -->
+        <div class="carousel-container">
+                <!-- Slideshow section containing carousel images and control buttons -->
+                <div class="slideshow">
+                    <button class="slide-btn slide-btn-1" aria-label="Go to slide 1"></button>
+                    <button class="slide-btn slide-btn-2" aria-label="Go to slide 2"></button>
+                    <button class="slide-btn slide-btn-3" aria-label="Go to slide 3"></button>
+                    <button class="slide-btn slide-btn-4" aria-label="Go to slide 4"></button>
+
+                    <div class="slideshow-wrapper">
+                        <div class="slide">
+                            <img class="slide-img"
+                                src="images/MCOMMONS-RackhamResourceFair-03.jpg.jpg" alt="Students walk through the Rackham Graduate Student Resource Fair">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img"
+                                src="images/MCOMMONS-ShaprioPartyForYourMind-7.jpg.jpg" alt="A student shows off a rock they decorated during the Party For Your Mind Welcome Week Event">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img"
+                                src="images/MCOMMONS-Festifall2024-14.jpg.jpg" alt="Students set up their tables to advertise their organizations during Festifall 2024">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img"
+                                src="images/MCOMMONS-Artscapade-15 copy.jpg.jpg"
+                                alt="Artscapade attendees laugh while playing Bingo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
     <main class = "container" id="main">
+
         <!-- Content taken from UMich CEW+ website: https://www.cew.umich.edu/ -->
         <section class="intro">
             <h2>CEW+ program : Reach your full potential
@@ -31,14 +67,14 @@
             <p>At CEW+, we navigate circumstantial barriers by providing academic, financial, and professional support to help you reach your personal potential. Established to support women through higher education, we lift up women and all underserved communities at U-M and beyond. Through career and education counseling, funding, workshops, events, and a diverse, welcoming community, we exist to empower. We are CEW+, and we’re here to help you reach your potential.
             </p>
         </section>
-        <section class="content-block">
+        <section class="content-block" id="cew-events">
             <div>
                 <h2>
                     Upcoming Events
                 </h2>
                 <p> Check out our upcoming events and workshops to stay updated</p>
             </div>
-            <article class="article-item">
+            <article class="article-item" >
                 <h3>How to apply for scholarships</h3>
                 <img src="images/MCOMMONS-DSC01644.jpg" alt="A girl working on a desktop">
                 <p>September 8, 8:30am to 9:30am<br>
@@ -57,7 +93,7 @@
                 Virtual</p>
             </article>
         </section>
-        <section class="content-block">
+        <section class="content-block" id="news">
             <div>
                 <h2>News</h2>
             </div>
@@ -95,8 +131,11 @@
         <p>CAPS <br>Contact Us: <br>
             <span><a href="tel:+17347648312">(734) 764-8312 (24hrs)</a></span>
             <span><a href="mailto:caps-uofm@umich.edu">caps-uofm@umich.edu</a></span><br><br>
-            &copy; University of Michigan 2024
+            <p>&copy; Copyrights <span id="year"></span> by University of Michigan. All rights reserved.</p>
         </p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>

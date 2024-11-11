@@ -22,8 +22,43 @@
             </div>
         </nav>
         <h1 class="heading1">Counseling and Psychological Services</h1>
-        <img src="images/UHS.jpg" alt="UHS signboard">
+
+        <!-- Code for carousel has been picked and edited from Geeks for Geeks carousel using CSS
+        Accessibility issues have been rectified through UM-GPTs suggestions
+        https://www.geeksforgeeks.org/how-to-make-a-carousel-using-css/ -->
+        <div class="carousel-container">
+            <!-- Slideshow section containing carousel images and control buttons -->
+            <div class="slideshow">
+
+                <button class="slide-btn slide-btn-1" aria-label="Go to slide 1"></button>
+                <button class="slide-btn slide-btn-2" aria-label="Go to slide 2"></button>
+                <button class="slide-btn slide-btn-3" aria-label="Go to slide 3"></button>
+                <button class="slide-btn slide-btn-4" aria-label="Go to slide 4"></button>
+
+                <div class="slideshow-wrapper">
+                    <div class="slide">
+                        <img class="slide-img"
+                            src="images/UHS.jpg" alt="UHS signboard">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-img"
+                            src="images/MCOMMONS-Artscapade-15.jpg.jpg" alt="Group of people sitting at a desk and excitedly chatting in an event">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-img"
+                            src="images/MCOMMONS-Harambee2024-01.jpg.jpg" alt="Students hang out in Trotter Multicultural Center during Harambee Black Student Convocation">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-img"
+                            src="images/MCOMMONS-PrideOutside2024-02.jpg.jpg"
+                            alt="A student dance group strikes a pose at the end of their routine under a tent at Pride Outside 2024">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </header>
+
     <main class = "container" id="main">
         <section class="intro">
             <h2>Welcome to CAPS!</h2>
@@ -38,21 +73,23 @@
                 <div><a href="https://caps.umich.edu/article/urgent-support">rgent Care</a></div>
             </div>
         </section>
-        <section>
-            <h2>
-            Guide to Peer Counselling
-            </h2>
-            <img class="img-padding" src="images/UMSI_MHIClassroom_02202023_18.jpg" alt="A boy and girl sitting and talking while pointing at a laptop on the desk">
-            <p>Read more to know how to get in touch with peer counsellors and get the most out of it.</p>
-        </section>
-        <section>
-            <h2>First Year Guide</h2>
-            <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="Student walking into campus with UMSI backpack">
-            <p>U-M Counseling & Psychological Services (CAPS) welcomes all of our 1st year students including those who are living on campus and those who are located remotely. We are happy to launch a new resource created exclusively for you: <a href="https://drive.google.com/file/d/1nwx-JfGYpcxGRhYM7yzLMwtU-E6rnWLl/view">“Go Blue! A New Student’s Guide to Surviving and Thriving at U-M: Mental Health Tips.”</a></p>
-        </section>
-        <section>
-            <h2>Togetherall</h2>
-            <p>Recognizing that some students who are feeling isolated, depressed, or anxious may find it challenging to connect with our resources and verbally express their needs, Counseling and Psychological Services (CAPS) is pleased to announce the piloting of <a href="https://caps.umich.edu/article/togetherall">Togetherall</a>, an online, anonymous peer-support tool available for free to our students.</p>
+        <section class="caps-content">
+            <section>
+                <h2>
+                Guide to Peer Counselling
+                </h2>
+                <img src="images/UMSI_MHIClassroom_02202023_18.jpg" alt="A boy and girl sitting and talking while pointing at a laptop on the desk">
+                <p>Read more to know how to get in touch with peer counsellors and get the most out of it.</p>
+            </section>
+            <section>
+                <h2>First Year Guide</h2>
+                <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="Student walking into campus with UMSI backpack">
+                <p>U-M Counseling & Psychological Services (CAPS) welcomes all of our 1st year students including those who are living on campus and those who are located remotely. We are happy to launch a new resource created exclusively for you: <a href="https://drive.google.com/file/d/1nwx-JfGYpcxGRhYM7yzLMwtU-E6rnWLl/view">“Go Blue! A New Student’s Guide to Surviving and Thriving at U-M: Mental Health Tips.”</a></p>
+            </section>
+            <section>
+                <h2>Togetherall</h2>
+                <p>Recognizing that some students who are feeling isolated, depressed, or anxious may find it challenging to connect with our resources and verbally express their needs, Counseling and Psychological Services (CAPS) is pleased to announce the piloting of <a href="https://caps.umich.edu/article/togetherall">Togetherall</a>, an online, anonymous peer-support tool available for free to our students.</p>
+            </section>
         </section>
     </main>
     <footer>
@@ -66,8 +103,10 @@
         <p>CAPS <br>Contact Us: <br>
             <span><a href="tel:+17347648312">(734) 764-8312 (24hrs)</a></span>
             <span><a href="mailto:caps-uofm@umich.edu">caps-uofm@umich.edu</a></span><br><br>
-            &copy; University of Michigan 2024
+            <p>&copy; Copyrights <span id="year"></span> by University of Michigan. All rights reserved.</p>
         </p>
-    </footer>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
 </body>
 </html>

@@ -34,7 +34,7 @@
                 <li><img src="images/icons/nightlife_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="" class="icon">Life Outside Classroom</li>
             </ul>
         </section>
-        <section class="content-block">
+        <section class="content-block" id = "physical_health">
             <div>
                 <h2>Physical Health</h2>
                 <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
@@ -57,7 +57,7 @@
             </article>
         </section>
 
-        <section class="content-block">
+        <section class="content-block" id ="mental_health">
             <div>
                 <h2>Mental Health</h2>
                 <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
@@ -110,8 +110,10 @@
         <p>CAPS <br>Contact Us: <br>
             <span><a href="tel:+17347648312">(734) 764-8312 (24hrs)</a></span>
             <span><a href="mailto:caps-uofm@umich.edu">caps-uofm@umich.edu</a></span><br><br>
-            &copy; University of Michigan 2024
+            <p>&copy; Copyrights <span id="year"></span> by University of Michigan. All rights reserved.</p>
         </p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </footer>
 </body>
-</html>
